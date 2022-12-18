@@ -1,0 +1,34 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text center">Registra Artista</h3>
+    <form (ngSubmit) = "OnSubmit()">
+
+        <div class="form-group">
+            <label>Nombre del Artista:</label>
+            <input type="text" class="form-control" id="nombremusico" [(ngModel)] = "art.nombremusico"  name="nombremusico">        
+        </div>
+        <div class="form-group">
+            <label>Genero Musical:</label>
+            <input type="text" class="form-control" id="generomusico" [(ngModel)] = "art.generomusico"  name="generomusico">        
+        </div>
+        <div class="form-group">
+            <label>Tiempo de Actividad:</label>
+            <input type="text" class="form-control" id="tiempoactividad" [(ngModel)] = "art.tiempoactividad"  name="tiempoactividad">        
+        </div>
+        <div class="form-group">
+            <label>Cant. de Miembros:</label>
+            <input type="number" class="form-control" id="miembros" [(ngModel)] = "art.miembros"  name="miembros">        
+        </div>
+        <div class="form-group">
+            <label>Lugar de Origen:</label>
+            <input type="text" class="form-control" id="lugarorigen" [(ngModel)] = "art.lugarorigen"  name="lugarorigen">        
+        </div>
+        <button class="btn btn-success">Guardar</button><br><br>
+        <div>
+          
+        <input type="reset" class="btn btn-success">
+        </div>
+        
+        
+        
+    </form>
+</div>

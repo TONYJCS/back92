@@ -1,0 +1,33 @@
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Numero</th>
+            <th>Nombres</th>
+            <th>Apellidos</th>
+            <th>Correo</th>
+            <th>DNI</th>
+            <th>Edad</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let identificador of  listaCliente">
+            <td>{{identificador.idcliente}}</td>
+            <td>{{identificador.nombrecliente}}</td>
+            <td>{{identificador.apellidocliente}}</td>
+            <td>{{identificador.correocliente}}</td>
+            <td>{{identificador.dnicliente}}</td>
+            <td>{{identificador.edadcliente}}</td>
+            <td>{{identificador.fechanacimiento}}</td>
+            <td>{{identificador.estado}}</td>
+            <td>
+                <button (click)= "actualizarCliente(identificador.idcliente)" class="btn btn-info">Modificar</button>
+                <button (click)= "eliminarCliente(identificador.idcliente)" class ="btn btn-danger" style="margin-top: 10px;">Eliminar</button>
+
+            </td>
+        </tr>
+    </tbody>
+</table>

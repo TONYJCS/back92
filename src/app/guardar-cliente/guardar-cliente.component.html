@@ -1,0 +1,33 @@
+<div class="col-md-6 offset-md-3">
+    <h3 class="text-center">Registrar Cliente</h3>
+    <form (ngSubmit)="OnSubmit()">
+        <div class="form-group ">
+            <label>Nombres: </label>
+            <input class="form-control" id="nombrecliente"[(ngModel)] ="cli.nombrecliente" name="nombrecliente">
+         </div>
+        <div class="form-group ">
+            <label>Apellidos: </label>
+            <input class="form-control" id="apellidocliente"[(ngModel)] ="cli.apellidocliente" name="apellidocliente">
+        </div>
+        <div class="form-group ">
+            <label>Correo Electronico: </label>
+            <input class="form-control" id="correocliente"[(ngModel)] = "cli.correocliente" name="correocliente">
+        </div>
+        <div class="form-group ">
+            <label>DNI: </label>
+            <input class="form-control" type="number" id="dnicliente"[(ngModel)] ="cli.dnicliente" name="dnicliente">
+        </div>
+        <div class="form-group ">
+            <label>Edad: </label>
+            <input class="form-control" type="number" id="edadcliente"[(ngModel)] ="cli.edadcliente" name="edadcliente">
+        </div>
+        <div class="form-group ">
+            <label>Fecha de Nacimiento: </label>
+            <input class="form-control" type="date" id="fechanacimiento"[(ngModel)]="cli.fechanacimiento" name="fechanacimiento">
+        </div>
+        
+        
+        <button class="btn btn-success">Guardar</button> 
+    </form>
+</div>
+

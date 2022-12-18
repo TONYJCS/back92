@@ -1,0 +1,29 @@
+<table class="table table-striped">
+    <thead class="table-success"> 
+        <tr>
+             <th>Numero</th>
+             <th>Nombre del Artista</th>
+             <th>Genero Musical</th>
+             <th>Años de Actividad</th>
+             <th>Cant.de Miembros</th>
+             <th>Lugar de Origen</th>
+             <th>Estado</th>
+             <th>Acciones</th>
+
+        </tr>
+    </thead>
+    <tbody *ngFor ="let identificador of listaArtista">
+            <td>{{identificador.idmusico}}</td>
+            <td>{{identificador.nombremusico}}</td>
+            <td>{{identificador.generomusico}}</td>
+            <td>{{identificador.tiempoactividad}}</td>
+            <td>{{identificador.miembros}}</td>
+            <td>{{identificador.lugarorigen}}</td>
+            <td>{{identificador.estado}}</td>
+            <td>
+                <button (click)="actualizarArtista(identificador.idmusico)" class="btn btn-info">Modificar</button>
+                <button (click)="eliminarArtista(identificador.idmusico)"class="btn btn-danger">Eliminar</button>
+               
+            </td>
+    </tbody>
+</table>

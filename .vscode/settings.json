@@ -1,0 +1,9 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/a65c62ca-7da4-4184-9848-a3b519d58359/AppServices/subscriptions/a65c62ca-7da4-4184-9848-a3b519d58359/resourceGroups/jhonnrecursos/providers/Microsoft.Web/sites/frontjhon",
+    "appService.deploySubpath": "dist\\sistema-jhon",
+    "appService.showBuildDuringDeployPrompt": false
+}
